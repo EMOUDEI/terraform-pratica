@@ -1,7 +1,7 @@
 resource "aws_instance" "website_server" {
   ami                    = "ami-068c0051b15cdb816" # Amazon Linux 2 AMI
   instance_type          = "t2.micro"
-  key_name               = "chave-site-prod"
+  key_name               = "site-prod"
   vpc_security_group_ids = [aws_security_group.web-site-sg.id]
   iam_instance_profile   = "ECR-EC2-Role"
 
