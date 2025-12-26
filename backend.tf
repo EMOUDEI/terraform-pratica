@@ -2,9 +2,9 @@
 terraform {
   backend "s3" {
     bucket  = "deivid-terraform"
-    key     = "site/terraform.tfstate"
+    key     = "site2/terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
-
+    use_lockfile = true
   }
 }
