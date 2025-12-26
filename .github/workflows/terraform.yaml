@@ -9,9 +9,8 @@ on:
         default: 'false'
         type: choice
         options:
-          - info
-          - warning
-          - debug
+          - true
+          - false
 
 permissions:
   id-token: write
